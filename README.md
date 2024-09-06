@@ -80,7 +80,7 @@ https://thirdweb.com/story-iliad-testnet
 ```
 **You need at least have 1 IP on wallet before go to last step**
 
-### Step-6  Register validator
+### Step-7  Register validator
 ```
 story validator create --stake 1000000000000000000 --private-key "your_private_key"
 ```
