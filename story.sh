@@ -122,3 +122,10 @@ sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $CONFIG_PATH
 
 echo "Persistent peers updated in $CONFIG_PATH."
 
+
+# Step 11: Reload systemd, Enable, and Start Services
+echo "Reloading systemd, enabling, and starting Story-Geth and Story services..."
+sudo systemctl daemon-reload
+sudo systemctl enable story-geth story
+sudo systemctl start story-geth story
+
