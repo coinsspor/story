@@ -84,10 +84,3 @@ https://thirdweb.com/story-iliad-testnet
 ```
 story validator create --stake 1000000000000000000 --private-key "your_private_key"
 ```
-### BACK UP FILE
-
-1-Wallet private key:
-```sudo nano ~/.story/story/config/private_key.txt```
-
-2-Validator key:
-```sudo nano ~/.story/story/config/priv_validator_key.json```
