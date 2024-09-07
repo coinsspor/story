@@ -112,7 +112,7 @@ echo "Prometheus Port: $prometheus_port"
 
 # Step 10: Update Persistent Peers in config.toml
 echo "Fetching peers and updating persistent_peers in config.toml..."
-URL="https://story-testnet-rpc.itrocket.net/net_info"
+URL="https://story-testnet-rpc.coinsspor.com/net_info"
 response=$(curl -s $URL)
 PEERS=$(echo $response | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):" + (.node_info.listen_addr | capture("(?<ip>.+):(?<port>[0-9]+)$").port)' | paste -sd "," -)
 echo "PEERS=\"$PEERS\""
