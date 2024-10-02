@@ -14,6 +14,8 @@ Story is the World’s IP Blockchain, onramping Programmable IP to power the nex
 
 ### Step-1 Auto Install ( u must select port and moniker name)
 
+*Auto Install scrpit include latest story v0.10.1 and Storty-geth Story-Geth v0.9.3.
+*Additionally, if you already have the latest versions, you can proceed from step 7 only if you are going to perform an update
 ```
 source <(curl -s https://raw.githubusercontent.com/coinsspor/story/main/story.sh)
 ```
@@ -60,4 +62,21 @@ https://thirdweb.com/story-iliad-testnet
 ### Step-6  Register validator
 ```
 story validator create --stake 1000000000000000000 --private-key "your_private_key"
+```
+
+### Step-7   Update  Validator
+
+If a new update is released, find the name of the latest binary file from the link https://github.com/piplabs/story/releases/ and replace it with xxxxxxxxxxxxxx
+
+```
+sudo systemctl stop story
+cd $HOME
+wget https://story-geth-binaries.s3.us-west-1.amazonaws.com/story-public/xxxxxxxxxxxxxxxxxx.tar.gz
+tar -xzvf xxxxxxxxxxxxxxx.tar.gz
+cp $HOME/xxxxxxxxxxxxxx/story $HOME/go/bin
+source $HOME/.bash_profile
+story version
+sudo systemctl daemon-reload && \
+sudo systemctl start story &&\
+sudo systemctl status story
 ```
