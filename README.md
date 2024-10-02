@@ -19,7 +19,7 @@ source <(curl -s https://raw.githubusercontent.com/coinsspor/story/main/story.sh
 ```
 
 
-```
+
 ### Step-2 Synchronization Check
 
 xx ,The 2-digit part number you entered in step 1.
