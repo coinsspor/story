@@ -1,3 +1,17 @@
+#!/bin/bash
+# Story Node Automatic Upgrade Script with Screen
+
+# --------------------------------
+# Color Definitions
+# --------------------------------
+NC="\033[0m"       # No Color
+CYAN="\033[1;36m"  # Cyan
+YELLOW="\033[1;33m" # Yellow
+RED="\033[1;31m"   # Red
+GREEN="\033[1;32m" # Green
+PURPLE="\033[1;35m" # Purple
+BOLD="\033[1m"     # Bold Text
+
 # --------------------------------
 # Upgrade Parameters
 # --------------------------------
